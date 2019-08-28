@@ -6,6 +6,11 @@ spring:
         service-id: config-server
       name: item-service
       profile: dev
+    inetutils:
+      ignored-interfaces:
+        - VM.*
+      preferred-networks: 
+        - 176.211.100
 #获取config-server    
 eureka: 
   client:
